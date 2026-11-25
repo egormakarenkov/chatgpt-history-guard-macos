@@ -1,0 +1,18 @@
+{
+  "name": "chatgpt-history-guard-source",
+  "private": true,
+  "version": "0.2.0",
+  "engines": { "node": ">=22" },
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "test": "node --test scripts/*.test.mjs",
+    "check": "node scripts/check.mjs",
+    "owner": "node scripts/owner.mjs"
+  },
+  "devDependencies": {
+    "@electron/asar": "3.4.0",
+    "@electron/fuses": "2.1.2",
+    "jsdom": "26.1.0"
+  }
+}

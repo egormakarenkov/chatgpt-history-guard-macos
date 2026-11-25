@@ -1,0 +1,40 @@
+/* Defense in depth: host transport policy remains authoritative. */
+html.personal-history-guard-starting #root {
+  visibility: hidden !important;
+}
+.personal-history-guard-hidden-link,
+.personal-history-guard-hidden-control,
+.personal-history-guard-hidden-preview {
+  display: none !important;
+}
+html.personal-history-guard-blocked main {
+  visibility: hidden !important;
+}
+#personal-history-guard-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 2147483647;
+  display: grid;
+  place-items: center;
+  background: #151515;
+  color: white;
+  font: 15px -apple-system, BlinkMacSystemFont, sans-serif;
+}
+.personal-history-guard-box {
+  max-width: 420px;
+  padding: 28px;
+  border: 1px solid #555;
+  border-radius: 14px;
+  background: #242424;
+}
+.personal-history-guard-box h2 { margin: 0 0 12px; font-size: 20px; }
+.personal-history-guard-box p { line-height: 1.5; }
+.personal-history-guard-box button {
+  margin-top: 10px;
+  padding: 9px 13px;
+  border: 0;
+  border-radius: 8px;
+  background: #f5f5f5;
+  color: #171717;
+  cursor: pointer;
+}
